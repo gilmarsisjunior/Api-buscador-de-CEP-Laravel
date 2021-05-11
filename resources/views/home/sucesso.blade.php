@@ -9,7 +9,7 @@
 
     <div class="col-md-3">
         <label for="inputEmail4" class="form-label">CEP</label>
-        <input type="email" class="form-control" id="inputEmail4" value="{{$cep}}">
+        <input type="text" class="form-control" id="inputEmail4" value="{{$cep}}">
       </div>
     @endif
 
@@ -44,7 +44,7 @@
 
     <div class="col-3">
     <div class="col-3">
-      <input type="submit" class="btn btn-primary" href="http:://www.google.com">
+    <button class="btn btn-primary"><a class="btn btn-primary" href="/">Retornar</a></button>  
     </div>
   </form>
 @endsection
