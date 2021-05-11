@@ -13,6 +13,12 @@ class RequestController extends Controller
         {
             //pega o cep fornecido através de um GET
             $cep = $request -> input('cep');
+            $cep = str_replace('-','', $cep);
+
+            if(strlen($cep) > 8 || strlen($cep) <1 )
+            {
+                return view('error.404');
+            }
 
             //prepara a URL para o request
 
